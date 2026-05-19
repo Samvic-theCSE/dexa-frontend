@@ -1,0 +1,7 @@
+task_research:
+  description: "Browse the browser-use GitHub repository layout. Find the title of the latest release notes or version update tag."
+  expected_output: "The exact version string or title of the latest release notes extracted from the web page."
+
+task_compile:
+  description: "Take the extracted release version data from the research task and write a clean python logging script that records it."
+  expected_output: "A clean, fully functional python script containing logging initializations."
