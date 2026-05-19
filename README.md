@@ -58,9 +58,9 @@ ollama run qwen2.5-coder:7b
 2. Environment Verification
 Install required project package dependencies and configure your system's virtual Chromium instance:
 
-Bash
+```bash
 pip install -r requirements.txt
-playwright install
+playwright install```
 3. Launching the App Stream
 To ensure relative path definitions lookups resolve correctly without breaking runtime threads, execute the ASGI application directly from the root devsphere-agents/ directory using Python's internal module flag:
 
@@ -94,7 +94,3 @@ Runtime Isolation: The browser-tool.py environment spins up a native browser lay
 
 
 ---
-
-Save this version, hit `Ctrl+Shift+V` (or `Cmd+Shift+V` on Mac) to split open the VS Code Markdown preview pane, and you will see everything render flawlessly with crisp boundaries! 
-
-Everything else in your file explorer view on the left side of your screenshot looks structu
