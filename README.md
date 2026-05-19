@@ -58,9 +58,9 @@ ollama run qwen2.5-coder:7b
 2. Environment Verification
 Install required project package dependencies and configure your system's virtual Chromium instance:
 
-```bash
+Bash
 pip install -r requirements.txt
-playwright install```
+playwright install
 3. Launching the App Stream
 To ensure relative path definitions lookups resolve correctly without breaking runtime threads, execute the ASGI application directly from the root devsphere-agents/ directory using Python's internal module flag:
 
