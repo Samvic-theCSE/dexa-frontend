@@ -6,7 +6,7 @@ research_agent:
     structures, and extracting clean, unfiltered technical facts using automated browsers.
 
 coding_agent:
-  role: "Expert Software Engineer"
+  role: "Senior Expert Software Engineer"
   goal: "Write functional, clean, and highly optimized Python code blocks based on research data."
   backstory: |
     You are a veteran developer who writes strict, production-grade Python scripts matching 

@@ -1,8 +1,7 @@
-# src/main.py
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from src.crew import DevSphereCrew
+from backend.src.crew import DevSphereCrew
 
 app = FastAPI(
     title="DevSphere Agentic Engine API",

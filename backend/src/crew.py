@@ -1,11 +1,12 @@
-# src/crew.py
 import asyncio
+
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai.tools import tool
+
 from langchain_ollama import ChatOllama
+
 from browser_use import Agent as BrowserAgent
-from src.tools.browser_tool import run_browser_automation
 
 # Define our shared local compute model
 local_llm = ChatOllama(

@@ -94,7 +94,3 @@ Runtime Isolation: The browser-tool.py environment spins up a native browser lay
 
 
 ---
-
-Save this version, hit `Ctrl+Shift+V` (or `Cmd+Shift+V` on Mac) to split open the VS Code Markdown preview pane, and you will see everything render flawlessly with crisp boundaries! 
-
-Everything else in your file explorer view on the left side of your screenshot looks structu
