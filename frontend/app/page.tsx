@@ -79,7 +79,7 @@ export default function WorkspacePage() {
         <div className="flex items-center gap-3">
           <Layers className="w-4 h-4 text-zinc-500 dark:text-zinc-400" />
           <div>
-            <p className="text-[11px] uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400 font-semibold">AI Code Studio</p>
+            <p className="text-[11px] uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400 font-semibold">Dexa Studio</p>
             <p className="text-xs text-zinc-700 dark:text-zinc-300">Next.js editor workspace</p>
           </div>
         </div>
@@ -196,7 +196,7 @@ export default function WorkspacePage() {
             </section>
           </div>
 
-          <section className="mt-5 rounded-[2rem] border border-zinc-200 dark:border-zinc-900/70 bg-white dark:bg-[#070709] p-5 overflow-hidden shadow-sm">
+          {/* <section className="mt-5 rounded-[2rem] border border-zinc-200 dark:border-zinc-900/70 bg-white dark:bg-[#070709] p-5 overflow-hidden shadow-sm">
             <div className="flex items-center justify-between gap-3 mb-4">
               <div className="flex items-center gap-2 text-zinc-900 dark:text-zinc-100 font-semibold">
                 <Terminal className="w-4 h-4 text-violet-500" />
@@ -216,7 +216,7 @@ export default function WorkspacePage() {
               ))}
               <div ref={logEndRef} />
             </div>
-          </section>
+          </section> */}
         </main>
       </div>
     </div>
