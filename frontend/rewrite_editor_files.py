@@ -1,6 +1,6 @@
 from pathlib import Path
 
-page_content = ''''use client';
+page_content = """'use client';
 
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { Code2, Layers, Sidebar, Loader2, Sparkles, ArrowUpRight, FileText, Cpu, Wand2, MessageSquare, Terminal } from 'lucide-react';
@@ -317,4 +317,4 @@ export default function FileExplorer() {
     </div>
   );
 }
-EOF
+EOF"""

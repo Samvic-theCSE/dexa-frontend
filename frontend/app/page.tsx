@@ -79,8 +79,8 @@ export default function WorkspacePage() {
         <div className="flex items-center gap-3">
           <Layers className="w-4 h-4 text-zinc-500 dark:text-zinc-400" />
           <div>
-            <p className="text-[11px] uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400 font-semibold">AI Code Studio</p>
-            <p className="text-xs text-zinc-700 dark:text-zinc-300">Next.js editor workspace</p>
+            <p className="text-[11px] uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400 font-semibold">Dexa Studio</p>
+            <p className="text-xs text-zinc-700 dark:text-zinc-300">Code workspace</p>
           </div>
         </div>
 
@@ -91,7 +91,7 @@ export default function WorkspacePage() {
           >
             <Sidebar className="w-4 h-4" />
           </button>
-          <div className="rounded-2xl bg-zinc-100 dark:bg-white/5 px-3 py-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-zinc-500 dark:text-zinc-400">connected</div>
+          {/* <div className="rounded-2xl bg-zinc-100 dark:bg-white/5 px-3 py-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-zinc-500 dark:text-zinc-400">connected</div> */}
         </div>
       </header>
 
@@ -189,34 +189,11 @@ export default function WorkspacePage() {
                     className="inline-flex items-center gap-2 rounded-2xl bg-zinc-900 dark:bg-indigo-500 px-4 py-3 text-sm font-semibold text-white transition hover:bg-zinc-800 disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <ArrowUpRight className="w-4 h-4" />}
-                    <span>Apply</span>
                   </button>
                 </div>
               </form>
             </section>
           </div>
-
-          <section className="mt-5 rounded-[2rem] border border-zinc-200 dark:border-zinc-900/70 bg-white dark:bg-[#070709] p-5 overflow-hidden shadow-sm">
-            <div className="flex items-center justify-between gap-3 mb-4">
-              <div className="flex items-center gap-2 text-zinc-900 dark:text-zinc-100 font-semibold">
-                <Terminal className="w-4 h-4 text-violet-500" />
-                <span>Activity stream</span>
-              </div>
-              <span className="text-[11px] uppercase tracking-[0.2em] text-zinc-400">Live logs</span>
-            </div>
-            <div className="max-h-44 overflow-y-auto space-y-3 text-xs text-zinc-500 dark:text-zinc-400 pr-2 scrollbar-thin">
-              {logs.map((log, index) => (
-                <div key={index} className="rounded-2xl border border-zinc-200 dark:border-zinc-900/70 bg-zinc-50 dark:bg-[#0c0c10] px-4 py-3">
-                  <div className="flex items-center justify-between gap-2 text-[11px] uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-500">
-                    <span>{log.source}</span>
-                    <span>{log.timestamp}</span>
-                  </div>
-                  <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">{log.text}</p>
-                </div>
-              ))}
-              <div ref={logEndRef} />
-            </div>
-          </section>
         </main>
       </div>
     </div>
